@@ -1,0 +1,17 @@
+service: github-notificator-serverless
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: prod
+
+package:
+  artifact: dst.zip
+
+functions:
+  hello:
+    handler: handlers.hello
+    events:
+      - http:
+          path: hello
+          method: get

@@ -1,11 +1,11 @@
 {
-  "name": "github-notificator-serverless",
+  "name": "barking-doge",
   "version": "1.0.0",
   "description": "Github PR notificator with slack message to use serverless",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/deerFried/github-notificator-serverless.git"
+    "url": "https://github.com/deerFried/barking-doge.git"
   },
   "scripts": {
     "build": "rm -Rf dst && tsc && cd src && find . -name '*.json' -type f -exec cp {} ../dst/{} \\; && cd ..",

@@ -1,4 +1,6 @@
 import { Router } from "vingle-corgi";
 
-const router = new Router();
+import { routes } from "../routes";
+
+const router = new Router([ routes ]);
 export const handler = router.handler();

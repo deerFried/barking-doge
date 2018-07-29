@@ -9,7 +9,7 @@ export const routes = Route.POST("/payload", {
   action: Parameter.Body(joi.string()),
 }, async function() {
   const action = this.params.action as string;
-  console.log("LOGOOGOGG: ", action);
+  console.log("THISISLOG: ", action);
   return this.json({
     data: action
   });
